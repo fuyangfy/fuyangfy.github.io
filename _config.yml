@@ -1,31 +1,23 @@
-# Site settings
-title: Liang Ke Jin
-description: Liang Ke Jin
-favicon: /assets/img/avatar.JPG
-baseurl:
-url: https://liungkejin.github.io
-rss_url:
+# Jekyll Defaults
+title: Little Big Blue
+description: A small and simple site I made to test out Jekyll.
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# Build settings
+url: "http://localhost:3000"
+github: http://github.com/ITSJOHNCENA
 
-highlight: true
-#highlighter: rouge
-
-timezone: Asia/Shanghai
-
-markdown: kramdown
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: style
+markdown: redcarpet
+highlighter: rouge
+permalink: /post/:title/
+paginate: 4
+gems: [jekyll-paginate]
+paginate_path: "/page:num"
+rss_path: feed.xml
+tags_path: tag.html
+navigation:
+- text: About
+  url: /about/
+- text: Archives
+  url: /archives/
+- text: Tags
+  url: /tags/
